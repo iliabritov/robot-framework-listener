@@ -9,7 +9,7 @@
 		2. sender password
 		3. receiver username
 	2. Run
-		> sudo pip install poetry
+		> sudo pip install --user poetry
 		> poetry install
 		> poetry shell
 		> robot --listener EmailSenderListener.py --outputdir ./results QuickStart.rst
