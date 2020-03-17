@@ -1,12 +1,18 @@
 # robot-framework-listener
 
 ### Description
-	This listener send report-mail on your email address after each test
+	This listener sends report-mail on your email address after each test
 
 ### How to run:
-	> sudo pip install poetry
-	> poetry shell
-	> robot --listener EmailSenderListener.py --outputdir ./results QuickStart.rst
+	1. Add in mail_config.ini file addresses:
+		1. sender username
+		2. sender password
+		3. receiver username
+	2. Run
+		> sudo pip install poetry
+		> poetry install
+		> poetry shell
+		> robot --listener EmailSenderListener.py --outputdir ./results QuickStart.rst
 
 
 #### Email Report format:
